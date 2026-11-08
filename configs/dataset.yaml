@@ -1,0 +1,33 @@
+# Local Roboflow export: retail store item detection, version 2 (CC BY 4.0).
+path: data/processed/product_dataset
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 25
+names:
+  0: Beans
+  1: Cake
+  2: Candy
+  3: Cereal
+  4: Chips
+  5: Chocolate
+  6: Coffee
+  7: Corn
+  8: Fish
+  9: Flour
+  10: Honey
+  11: Jam
+  12: Juice
+  13: Milk
+  14: Nuts
+  15: Oil
+  16: Pasta
+  17: Rice
+  18: Soda
+  19: Spices
+  20: Sugar
+  21: Tea
+  22: Tomato Sauce
+  23: Vinegar
+  24: Water

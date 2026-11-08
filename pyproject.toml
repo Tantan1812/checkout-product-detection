@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "checkout-product-detection"
+version = "0.1.0"
+description = "Product detection prototype for checkout counters using YOLO26"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "ultralytics",
+  "opencv-python",
+  "PyYAML",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+checkout-vision = "checkout_vision.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

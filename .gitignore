@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and secrets
+.venv/
+venv/
+.env
+
+# Dataset files (keep directory markers only)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Model weights and generated outputs
+models/weights/*
+!models/weights/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

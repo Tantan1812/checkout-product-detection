@@ -1,0 +1,10 @@
+# Inference defaults for the supplied trained checkpoint.
+model: models/weights/best.pt
+source: 0  # 0 = default webcam; replace with an image/video path when needed
+confidence: 0.25
+iou: 0.45
+image_size: 640
+device: 0  # NVIDIA CUDA device 0; use cpu on machines without CUDA
+show: true
+save_output: true
+output_dir: outputs
